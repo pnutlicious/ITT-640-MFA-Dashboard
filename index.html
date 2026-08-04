@@ -2,23 +2,196 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MFA Dashboard Prototype</title>
+    <title>MFA Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Dashboard layout additions */
+        .dashboard-container {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .section {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .section h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background: #0f0f0f;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .item p {
+            margin: 5px 0;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 220px;
+            height: 100vh;
+            background: #111;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #4a90e2;
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+
+        .sidebar .user-info {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        body {
+            padding-left: 240px;
+        }
+    </style>
 </head>
 <body>
-    <h1>MFA Dashboard Prototype</h1>
-    <p>This site hosts the Figma mockups for my ITT-640 project.</p>
 
-    <h2>Landing Page</h2>
-    <img src="images/landing.png" alt="Landing Page">
+<div class="sidebar">
+    <h2>SecureID</h2>
 
-    <h2>Login Page</h2>
-    <img src="images/login.png" alt="Login Page">
+    <a href="dashboard.html">Overview</a>
+    <a href="#">Security</a>
+    <a href="#">Devices</a>
+    <a href="#">Activity</a>
+    <a href="#">Settings</a>
 
-    <h2>Create Account Page</h2>
-    <img src="images/create-account.png" alt="Create Account Page">
+    <div class="user-info">
+        <p><strong>Israel Mendoza</strong></p>
+        <p>isr@live.com</p>
+    </div>
+</div>
 
-    <h2>MFA Enrollment Page</h2>
-    <img src="images/mfa-enrollment.png" alt="MFA Enrollment Page">
+<div class="dashboard-container">
+
+    <!-- Header -->
+    <div class="section">
+        <h2>Welcome, Israel</h2>
+        <p>Your account is protected</p>
+        <p>Security Score: <strong>98</strong></p>
+    </div>
+
+    <!-- MFA Methods -->
+    <div class="section">
+        <h3>MFA Methods</h3>
+
+        <div class="item">
+            <p><strong>Authenticator App</strong></p>
+            <p>Microsoft Authenticator – Android</p>
+            <p>Status: Primary • Active</p>
+            <p>Added: July 25, 2026</p>
+        </div>
+
+        <div class="item">
+            <p><strong>SMS Verification</strong></p>
+            <p>+1 (000) 000‑****</p>
+            <p>Status: Active</p>
+            <p>Added: July 25, 2026</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Email Backup Code</strong></p>
+            <p>isr****@live.com</p>
+            <p>Status: Active</p>
+            <p>Added: July 25, 2026</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Hardware Security Key</strong></p>
+            <p>YubiKey 5C NFC</p>
+            <p>Status: Off • Not configured</p>
+        </div>
+    </div>
+
+    <!-- Trusted Devices -->
+    <div class="section">
+        <h3>Trusted Devices</h3>
+
+        <div class="item">
+            <p><strong>Surface Book</strong></p>
+            <p>Windows 11 • San Francisco, CA</p>
+            <p>This device • Last active 2 minutes ago</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Galaxy S24</strong></p>
+            <p>Android 16 • San Francisco, CA</p>
+            <p>Last active 1 hour ago</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Samsung Galaxy Tab</strong></p>
+            <p>Android 16 • Oakland, CA</p>
+            <p>Last active 3 days ago</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Windows PC</strong></p>
+            <p>Windows 11 • New York, NY</p>
+            <p>Last active 12 days ago</p>
+        </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="section">
+        <h3>Recent Activity</h3>
+
+        <div class="item">
+            <p><strong>Successful login</strong></p>
+            <p>Surface Book • Edge 124 • San Francisco, CA</p>
+            <p>Just now</p>
+        </div>
+
+        <div class="item">
+            <p><strong>MFA verified</strong></p>
+            <p>Authenticator App used • San Francisco, CA</p>
+            <p>2 minutes ago</p>
+        </div>
+
+        <div class="item">
+            <p><strong>New device trusted</strong></p>
+            <p>Galaxy Tab • Oakland, CA</p>
+            <p>3 days ago</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Failed login attempt</strong></p>
+            <p>Unknown device • Firefox 123 • Austin, TX</p>
+            <p>5 days ago</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Password changed</strong></p>
+            <p>Account settings • San Francisco, CA</p>
+            <p>10 days ago</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Successful login</strong></p>
+            <p>Windows PC • Edge 122 • New York, NY</p>
+            <p>12 days ago</p>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
