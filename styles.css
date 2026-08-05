@@ -9,6 +9,18 @@ body {
     margin: 0;
 }
 
+.signout-link {
+    color: #fff;
+    padding: 10px 20px;
+    background: #b30000;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.signout-link:hover {
+    background: #e60000;
+}
+
 .login-container {
     width: 100%;
     max-width: 400px;
