@@ -1,3 +1,4 @@
+/* Global */
 body {
     background: #0f0f0f;
     font-family: Arial, sans-serif;
@@ -124,4 +125,53 @@ button:hover {
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+/* --------------------------------------------- */
+/* MATCHED SIDEBAR + LAYOUT (Enroll + Dashboard) */
+/* --------------------------------------------- */
+
+.layout {
+    display: flex;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    display: block;
+    color: #4a90e2;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.sidebar a:hover {
+    color: #357abd;
+}
+
+/* Dashboard main content */
+.dashboard-container {
+    flex: 1;
+}
+
+/* Enroll main content */
+.enroll-container {
+    flex: 1;
+    max-width: 900px;
 }
