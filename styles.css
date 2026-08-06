@@ -113,6 +113,12 @@ button:hover {
     margin-bottom: 25px;
 }
 
+/* ⭐ FIX: Make dashboard sections sit side‑by‑side */
+.dashboard-sections .section {
+    flex: 1;
+    min-width: 250px;
+}
+
 .section {
     flex: 1;
     background: #1a1a1a;
